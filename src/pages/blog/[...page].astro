@@ -1,0 +1,23 @@
+---
+import type { GetStaticPaths } from 'astro'
+import PostPage from '../../components/PostPage.astro'
+import Pagination from '../../components/control/Pagination.astro'
+import { PAGE_SIZE } from '../../constants/constants'
+import MainGridLayout from '../../layouts/MainGridLayout.astro'
+import { getSortedPosts } from '../../utils/content-utils'
+import { i18n } from '../../i18n/translation'
+import I18nKey from '../../i18n/i18nKey'
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const allBlogPosts = await getSortedPosts()
+  return paginate(allBlogPosts, { pageSize: PAGE_SIZE }).slice(1) // Skip the first page, which is handled by /blog/index.astro
+}) satisfies GetStaticPaths
+
+const { page } = Astro.props
+const len = page.data.length
+---
+
+<MainGridLayout title={`${i18n(I18nKey.blog)} - ${i18n(I18nKey.page)} ${page.currentPage}`}>
+    <PostPage page={page}></PostPage>
+    <Pagination class="mx-auto onload-animation" page={page} style=`animation-delay: calc(var(--content-delay) + ${(len)*50}ms)`></Pagination>
+</MainGridLayout>

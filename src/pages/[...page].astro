@@ -1,23 +1,18 @@
 ---
 import type { GetStaticPaths } from 'astro'
-import PostPage from '../components/PostPage.astro'
-import Pagination from '../components/control/Pagination.astro'
 import { PAGE_SIZE } from '../constants/constants'
-import MainGridLayout from '../layouts/MainGridLayout.astro'
 import { getSortedPosts } from '../utils/content-utils'
 
+// This should now redirect to /blog for old paths
 export const getStaticPaths = (async ({ paginate }) => {
   const allBlogPosts = await getSortedPosts()
-  return paginate(allBlogPosts, { pageSize: PAGE_SIZE })
+  return paginate(allBlogPosts, { pageSize: PAGE_SIZE }).slice(1) // Skip page 1 since we've moved it to /blog
 }) satisfies GetStaticPaths
-// https://github.com/withastro/astro/issues/6507#issuecomment-1489916992
 
-const { page } = Astro.props
+if (Astro.params.page === '1') {
+  return Astro.redirect('/blog/');
+}
 
-const len = page.data.length
+// For pages other than 1, redirect to the corresponding page in /blog
+return Astro.redirect(`/blog/${Astro.params.page}/`);
 ---
-
-<MainGridLayout>
-    <PostPage page={page}></PostPage>
-    <Pagination class="mx-auto onload-animation" page={page} style=`animation-delay: calc(var(--content-delay) + ${(len)*50}ms)`></Pagination>
-</MainGridLayout>

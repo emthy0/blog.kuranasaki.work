@@ -40,8 +40,8 @@ export const siteConfig: SiteConfig = {
 export const navBarConfig: NavBarConfig = {
   links: [
     LinkPreset.Home,
+    LinkPreset.Blog,
     LinkPreset.Archive,
-    LinkPreset.About,
     {
       name: 'GitHub',
       url: 'https://github.com/saicaca/fuwari',     // Internal links should not include the base path, as it is automatically added
@@ -51,26 +51,31 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/demo-avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-  name: 'Lorem Ipsum',
-  bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  avatar: 'assets/images/kura_profile.gif',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+  name: 'Kongphop Chariyasathapond',
+  bio: 'Just enthuastic weeb engineer who not sure if he is civil engineer or computer enginer.',
   links: [
+    // {
+    //   name: 'X',
+    //   icon: 'fa6-brands:x-twitter',       // Visit https://icones.js.org/ for icon codes
+    //                                     // You will need to install the corresponding icon set if it's not already included
+    //                                     // `pnpm add @iconify-json/<icon-set-name>`
+    //   url: 'https://twitter.com',
+    // },
     {
-      name: 'Twitter',
-      icon: 'fa6-brands:twitter',       // Visit https://icones.js.org/ for icon codes
-                                        // You will need to install the corresponding icon set if it's not already included
-                                        // `pnpm add @iconify-json/<icon-set-name>`
-      url: 'https://twitter.com',
+      name: 'Discord',
+      icon: 'fa6-brands:discord',
+      url: 'http://discord.com/users/603763595754471425',
     },
     {
       name: 'Steam',
       icon: 'fa6-brands:steam',
-      url: 'https://store.steampowered.com',
+      url: 'https://steamcommunity.com/id/kuranasaki/',
     },
     {
       name: 'GitHub',
       icon: 'fa6-brands:github',
-      url: 'https://github.com/saicaca/fuwari',
+      url: 'https://github.com/emthy0',
     },
   ],
 }
