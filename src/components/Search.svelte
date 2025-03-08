@@ -11,17 +11,17 @@ const fakeResult = [
   {
     url: url('/'),
     meta: {
-      title: 'This Is a Fake Search Result',
+      title: 'Search Result Example',
     },
     excerpt:
-      'Because the search cannot work in the <mark>dev</mark> environment.',
+      'Search cannot work in the <mark>dev</mark> environment.',
   },
   {
     url: url('/'),
     meta: {
-      title: 'If You Want to Test the Search',
+      title: 'To Test the Search Feature',
     },
-    excerpt: 'Try running <mark>npm build && npm preview</mark> instead.',
+    excerpt: 'Try running <mark>pnpm build && pnpm preview</mark> instead.',
   },
 ]
 
