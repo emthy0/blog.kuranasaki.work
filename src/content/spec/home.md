@@ -1,58 +1,95 @@
 
-# 🚧 Portfolio Under Construction 🚧
+# Kongphop Chariyasathapond
 
-Welcome to my personal website! I'm Kongphop Chariyasathapond, also known as Kuranasaki or emthy0 online.
+Welcome to my personal website! I'm a software engineer specializing in full-stack development with a background in cybersecurity and system architecture.
 
-:::note{title="Site Status"}
-This website is currently under construction. I'm building a portfolio that showcases my work, skills, and experiences.
-
-Check back soon for updates!
+:::note{title="Contact Information"}
+- Email: 6430014321@student.chula.ac.th  
+- Phone: (+66) 802 584 584
+- GitHub: [emthy0](https://github.com/emthy0)
 :::
 
 ## About Me
 
-I'm a software developer passionate about creating elegant solutions to complex problems. With expertise in various technologies, I strive to build applications that are not only functional but also user-friendly.
+I'm a Computer Engineering student at Chulalongkorn University with professional experience in full-stack development, cybersecurity, and system architecture. I have a strong track record in CTF competitions and developing innovative solutions for various industries. My technical expertise spans backend systems, cloud infrastructure, and application security.
 
-:::important{title="Contact"}
-While I set up my portfolio, you can reach me through GitHub or connect with me professionally.
+:::important{title="Education"}
+- **Chulalongkorn University** (2021 - Present)  
+  Faculty of Computer Engineering  
+  Member of CUNEX club: IT department
+
+- **Mahidol Wittayanusorn School** (2019 - 2021)  
+  Robotic club vice president  
+  Developed official alumni system
 :::
+
+## Experience
+
+### State Railway of Thailand (SRT) Ticket System
+**Out-sourced Full-stack Developer** | Feb 2024 - Present
+- Integrated SRT ticket system with Line API message to notify passengers of train schedules or delays
+
+### Lineman Wongnai
+**Intern and Part-time Platform Engineer** | June 2024 - October 2024
+- Developed internal QA tools
+- Optimized pipeline and workflow
+- Integrated pipeline with SlackBot
+
+### PecGo
+**Out-sourced Full-stack Developer** | May 2023 - October 2023
+- Developed WebRTC calling on native app
+- Integrated deeplink technology on native app
+
+### CUNEX by KBTG
+**Backend Developer** | June 2021 - December 2022
+- Developed Chulalongkorn University internal election platform backend using Golang and Kubernetes
+- Built consistency and atomic system
+- Securely managed more than 50,000 users' data
+
+### SOPet
+**Full-stack Developer** | June 2019 - October 2022
+- Developed telemedicine platform from scratch using NuxtJS, ExpressJS, Docker, Nginx, Cloudflare
 
 ## Projects
 
-Here are some of my open-source projects:
-
 ::github{repo="emthy0/emthy0"}
-
-More projects will be added soon as I continue to develop this site.
 
 ## Skills
 
-- **Languages**: TypeScript, JavaScript, Python
-- **Frontend**: React, Vue, Svelte
-- **Backend**: Node.js, Express, Django
-- **DevOps**: Docker, AWS, CI/CD
-- **Other**: Git, RESTful APIs, GraphQL
+- **Programming Languages**: Golang, JavaScript, TypeScript, Java, Python, Scala, C, C++, C#
+- **Backend**: Node.js, Express, Golang, Django
+- **Frontend**: React, Vue, Svelte, NuxtJS
+- **DevOps & Infrastructure**: Docker, Kubernetes, Terraform, Packer, Proxmox, GitLab, Jenkins
+- **Cloud**: AWS, vSphere
+- **Security**: Wireshark, Burpsuite, Ghidra, Volatility3, Splunk SoC, Cortex XDR SoC
+- **Languages**: English (IELTS 6.5), Thai (Native)
 
-## Timeline
+## Awards & Achievements
 
-| Year | Event |
-|------|-------|
-| 2023 | Started building this portfolio website |
-| 2022 | Worked on various open-source projects |
-| 2021 | Contributed to community-driven initiatives |
+| Year | Award/Achievement |
+|------|-------------------|
+| 2024 | 4th Award - ASEAN Cyber Shield CTF (Student Division), Vietnam |
+| 2023 | 4th Award - ASEAN Cyber Shield CTF (Student Division), Indonesia |
+| 2023 | CDG Intelligence Virtual Hackathon Winner - Raised 300,000 THB |
+| 2022 | 2nd Award - Palo Alto Networks Capture The Flag Competition |
+| 2022 | 12th Award - Singapore CyberGovWare Splunk>BOSS of the SOC CTF |
+| 2022 | Thailand Post Journey to Startup Sandbox Winner - Raised 100,000 THB |
+| 2022 | Global Cybersecurity Camp Taiwan Participant |
+| 2021 | STDio CTF Award |
+| 2021 | 1st Award - ASEAN-Japan Cybersecurity CTF |
+| 2021 | 1st Award - Thailand Cyber Top Talent Senior CTF |
 
 ```typescript
-// Coming soon: Interactive portfolio components
-const portfolio = {
-  status: "under construction",
-  expectedCompletion: "soon",
-  features: [
-    "Project showcase",
-    "Blog articles",
-    "Interactive demos",
-    "Contact form"
+// My development focus areas
+const expertise = {
+  fullStack: ["Frontend", "Backend", "Infrastructure"],
+  security: ["Penetration Testing", "CTF", "Security Operations"],
+  specialties: [
+    "System Architecture",
+    "Cloud Infrastructure",
+    "Secure Application Development"
   ]
 };
 ```
 
-Stay tuned for more updates! In the meantime, feel free to check out my [blog](/blog) for some of my thoughts and projects.
+Feel free to check out my [blog](/blog) for some of my technical writing and project documentation.
